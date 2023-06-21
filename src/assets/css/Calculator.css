@@ -1,318 +1,347 @@
 body {
-    padding: 0;
-    margin: 0;
-    font-size: 16px;
-    background-color: hsl(185, 41%, 84%);
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  /* background-color: hsl(185, 41%, 84%); */
+  font-family: 'Space Mono';
+}
+
+/* Hide the increment and decrement buttons */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.tip-item {
+   
+}
+
+.warning-msg {
+  padding: 0;
+  margin: 0;
 }
 
 .container {
-    /* height: 100vh; */
-    /* width: 100vw; */
-    /* background-color: hsl(185, 41%, 84%); */
-    /* justify-content: center;
-    align-items: center;
-    display: flex;
-    text-align: center; */
-    margin: 0 auto;
-    
+  height: 100vh;
+  /* width: 100%; */
+  /* background-color: hsl(185, 41%, 84%); */
+  /* justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(185, 41%, 84%);
+  margin: 0 auto;
 }
 
 .calc-inner {
-    background-color: hsl(0, 0%, 100%);
-    width: 50%;
-    padding: 2rem;
-    margin: 0 auto;
-    border-radius: 0.8rem;
-    display: flex;
-
+  background-color: hsl(0, 0%, 100%);
+  width: 58vw;
+  /* padding: 16px; */
+  height: 63vh;
+  padding: 1rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+  display: flex;
 }
 
 .calc-body {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 5rem;
-
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 0rem;
 }
 
 .left-bill {
-    padding: 2rem;
-    width: 50%;
+  width: 50%;
+  margin: 1rem;
+  padding: 0.9rem 1rem;
+  border-radius: 1rem;
 }
 
 .left-bill-heading {
-    color: hsl(186, 14%, 43%);
-    margin: 0;
-    line-height: 2;
-    font-size: 0.8rem;
-
+  color: hsl(186, 14%, 43%);
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-size: 16px;
 }
 
 .bill-input {
-    text-align: left;
-    margin: 1rem 0;
+  text-align: left;
+  margin: 1rem 0;
+}
 
+.button-input {
+  text-align: left;
+  margin: 2.5rem 0;
 }
 
 .right-result {
-    padding: 2rem;
-    width: 50%;
-    background-color: hsl(183, 100%, 15%);
-    border-radius: 1rem;
+  width: 50%;
+  margin: 2rem 2.6rem 1.5rem 0;
+  padding: 0 1rem;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 1rem;
 }
 
+.right-result-inner-body {
+  padding: 1.2rem;
+}
 
 .get-bill {
-    padding: 0.5rem;
-    text-align: right;
-    color: hsl(183, 100%, 15%);
-    font-weight: 700;
-    font-size: 1.5rem;
-    border: none;
-    outline: none;
-    width: 14rem;
-    background: transparent;
-
+  padding: 0.5rem 0.1rem;
+  text-align: right;
+  color: hsl(183, 100%, 15%);
+  font-weight: 700;
+  font-size: 1.6rem;
+  font-family: monospace;
+  border: none;
+  outline: none;
+  width: 20.5rem;
+  background: transparent;
 }
 
 .Bill-input {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: 5.1rem 5.1rem 5.1rem;
-    row-gap: 1rem;
-    column-gap: 1rem;
-
+  display: grid;
+  grid-template-columns: 7.1rem 7.1rem 7.1rem;
+  row-gap: 10px;
+  column-gap: 18px;
+  margin-top: 0.8rem;
 }
-.logo{
-    margin: 2rem;
+
+.logo {
+  margin: 5rem;
 }
 
 .grid-items {
-    text-align: center;
-    padding: 0.5rem;
-    font-size: 1rem;
-    font-weight: 700;
-    border-radius: 0.3rem;
-    cursor: pointer;
-    background-color: hsl(183, 100%, 15%);
-    color: white;
-    border: none;
-
-
+  text-align: center;
+  padding: 10px;
+  font-size: 25px;
+  font-weight: 700;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  font-family: monospace;
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  border: none;
 }
-.custom-input{
-        text-align: center;
-        padding: 0.5rem;
-        font-size: 1rem;
-        font-weight: 700;
-        border-radius: 0.3rem;
-        cursor: pointer;
-        background-color: hsl(189, 41%, 97%);
-        
-        border: none;
+
+.custom-input {
+  text-align: right;
+  padding: 0.5rem;
+  font-size: 24px;
+  color: hsl(183, 100%, 15%);
+  outline-color: hsl(172, 67%, 45%);
+  font-weight: 700;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  background-color: hsl(189, 41%, 97%);
+  border: none;
 }
-.grid-items:hover{
-    color: hsl(183, 100%, 15%);
-    background-color: hsl(172, 67%, 45%);;
+
+.grid-items:hover {
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(172, 67%, 45%);
 }
 
 .icon-input {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0rem 1rem;
-    width: 18rem;
-    background-color: hsl(189, 41%, 97%);
-    border-radius: 0.5rem;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 1rem;
+  width: 21.6rem;
+  border: 1px solid transparent;
+  margin-bottom: 3rem;
+  background-color: hsl(189, 41%, 97%);
+  border-radius: 0.5rem;
 }
 
-.icon-input:hover{
-    border: 1px hsl(183, 100%, 15%) solid;
+.icon-input:hover {
+  border: 1px hsl(183, 100%, 15%) solid;
 }
-
 
 .right-result-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 1rem;
 }
 
 .right-right {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: hsl(172, 67%, 45%);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: hsl(172, 67%, 45%);
 }
 
 .right-left {
-    color: white;
-    text-align: left;
+  color: white;
+  text-align: left;
 }
 
 .right-left p {
-    margin: 0;
-    line-height: 1.5;
+  margin: 0;
+  line-height: 1.5;
 }
-
 
 .sub-heading {
-    font-size: 0.8rem;
-    color: hsl(184, 14%, 56%);
+  font-size: 0.8rem;
+  color: hsl(184, 14%, 56%);
 }
-
 
 .reset-button {
-    padding: 0.8rem 8rem;
-    border-radius: 0.8rem;
-    border: none;
-    background-color: hsl(172, 67%, 45%);
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
+  padding: 0.7rem;
+  width: 21rem;
+  border-radius: 0.6rem;
+  border: none;
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  font-size: 24px;
+  margin-top: 6.3rem;
+  font-family: monospace;
+  font-weight: bold;
+  cursor: pointer;
 }
-.left-msgs{
-   
+
+.reset-button:hover {
+  background-color: hsl(172, 46%, 70%);
+}
+
+.left-msgs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 0;
+  margin-top: 3rem;
+}
+
+.left-msgs p {
+  font-size: 1rem;
+  padding: 0 1.1rem;
+  color: red;
+}
+
+.activeButton {
+  background-color: hsl(172, 59%, 59%);
+}
+
+@media (max-width: 400px) {
+  .calc-inner {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .calc-body {
+    margin-top: 0rem;
+  }
+
+  .left-bill {
+    width: 100%;
+    margin: 0rem;
+    padding: 1rem;
+  }
+
+  .bill-input {
+    text-align: left;
+    margin: 1rem 0;
+  }
+
+  .button-input {
+    text-align: left;
+    margin: 2.5rem 0;
+  }
+
+  .get-bill {
+    width: 17rem;
+  }
+
+  .grid-container {
+    grid-template-columns: 8.4rem 8.4rem;
+  }
+
+  .logo {
+    margin: 2rem;
+  }
+
+  .icon-input {
+    width: 18rem;
+  }
+
+  .right-result-inner {
+    margin: 0;
+  }
+
+  .right-right {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: hsl(172, 67%, 45%);
+  }
+
+  .right-left {
+    color: white;
+    text-align: left;
+  }
+
+  .right-left p {
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  .sub-heading {
+    font-size: 0.8rem;
+    color: hsl(184, 14%, 56%);
+  }
+
+  .reset-button {
+    width: 16rem;
+    margin-top: 3rem;
+  }
+
+  .right-result {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 1rem;
+  }
+
+  .left-msgs {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.left-msgs p{
-    font-size: 1rem;
-    color: red;
-}
+    padding: 0;
+    margin-top: 3rem;
+  }
 
-@media (max-width: 380px) {
-
-
-    body {
-        font-size: 16px;
-
-    }
-
-    .calc-inner {
-        padding: 0 1rem 1rem 1rem;
-        margin-top: 1rem;
-        width: auto;
-        height: auto;
-        border-radius: 3rem;
-        display: block;
-
-    }
-    .calc-body{
-        margin-top: 2rem;
-    }
-
-    .left-bill {
-        padding: 1rem;
-        width: auto;
-        margin: 0 auto;
-
-    }
-
-
-
-
-    .right-result {
-        padding: 2rem;
-        width: auto;
-        background-color: hsl(183, 100%, 15%);
-        border-radius: 1rem;
-        height: auto;
-    }
-
-    .logo {
-        padding: 0rem;
-    }
-
-
-    .grid-container {
-
-        grid-template-columns: 9rem 9rem;
-
-
-    }
-
-    .grid-items {
-
-        padding: 1rem;
-
-
-    }
-
-
-
-    .right-right {
-        font-size: 2.5rem;
-        font-weight: 700;
-        color: hsl(172, 67%, 45%);
-    }
-
-    .right-left {
-        color: white;
-        text-align: left;
-    }
-
-    .right-left p {
-        margin: 0;
-        line-height: 1.5;
-    }
-
-    .tip-amount {}
-
-    .sub-heading {
-        font-size: 0.8rem;
-        color: hsl(184, 14%, 56%);
-    }
-
-    .reset-button {
-        padding: 0.8rem 5rem;
-        border-radius: 0.8rem;
-        border: none;
-        background-color: hsl(172, 67%, 45%);
-        color: white;
-        font-size: 1rem;
-        cursor: pointer;
-    }
-    .get-bill {
-        padding: 0.4rem;
-        font-size: 1.3rem;
-        width: 16rem;    
-    }
-   
-        .icon-input {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 0rem 1rem;
-            width: 18rem;
-            background-color: hsl(189, 41%, 97%);
-            border-radius: 0.5rem;
-    
-        }
-.get-bill {
-    padding: 0.5rem;
-    text-align: right;
-    color: hsl(183, 100%, 15%);
-    font-weight: 700;
-    font-size: 1.5rem;
-    border: none;
-    width: 12rem;
-    background: transparent;
-
-}
-.right-result {
-    padding: 2rem;
+  .right-result {
+    width: 80%;
     margin: 1rem;
-}
-.right-right {
-    font-size: 2rem;
-   padding: 0;
-   margin: 0;
-}
+    padding: 1rem;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right-result-inner-body {
+    width: 100%;
+  }
 }

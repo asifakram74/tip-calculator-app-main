@@ -11,6 +11,8 @@ export default function Calculator () {
     const [getBill, setGetBill] = useState('')
     const [custom , setCustom] = useState('')
     const [pMissing, setPMissing] = useState(false)
+        const [activeButton, setActiveButton] = useState('');
+
         const [inputborder,setInputBorder] = useState('')
 
 return(
@@ -18,12 +20,18 @@ return(
         <div className="container">
            <div className="calc-body">
            <Logo className='logo'/>
+           <div className='center'>
             <div className="calc-inner">
+
                 <Bill bill = {bill} setBill = {setBill} tip={tip} setTip={setTip} person = {person} setPerson={setPerson} getBill = {getBill} 
-                setGetBill = {setGetBill} setCustom={setCustom} custom={custom} pMissing = {pMissing} setPMissing={setPMissing} inputborder={inputborder} setInputBorder={setInputBorder}/>
+                setGetBill = {setGetBill} setCustom={setCustom} custom={custom} pMissing = {pMissing} setPMissing={setPMissing}
+                 inputborder={inputborder} setInputBorder={setInputBorder} 
+                 setActiveButton={setActiveButton} activeButton={activeButton}/>
 
                 <Result bill = {bill} setBill = {setBill} tip={tip} setTip={setTip} person = {person} setPerson={setPerson} getBill = {getBill} 
-                setGetBill = {setGetBill} setCustom={setCustom} custom={custom} pMissing = {pMissing} setPMissing={setPMissing} setInputBorder={setInputBorder}/>    
+                setGetBill = {setGetBill} setCustom={setCustom} custom={custom} 
+                pMissing = {pMissing} setPMissing={setPMissing} setInputBorder={setInputBorder} setActiveButton={setActiveButton}/>    
+            </div>
             </div>
             </div>
             
